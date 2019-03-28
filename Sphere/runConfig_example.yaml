@@ -1,0 +1,32 @@
+# program settings
+ompThreads: -1
+rngSeed: 1234
+# simulation box
+simBoxLow: [0.0,0.0,0.0]
+simBoxHigh: [10.0,10.0,10.0]
+simBoxPBC: [true,false,false]
+wallLowZ: false
+wallHighZ: false
+# initialization box
+initBoxLow: [2.0,2.0,2.0]
+initBoxHigh: [8.0,8.0,8.0]
+# initialization inside a circle 
+initCircularX: true
+# components < -1  or > 1 will be randomly set
+initOrient: [2,2,2]
+# physical settings 
+viscosity: 0.001   #pN/(um^2.s)
+KBT: 0.00411       #pN.um, 300K
+# Sphere
+sphereNumber: 100
+sphereRadius: 1.0
+sphereRadiusSigma: -1.0
+sphereRadiusColRatio: 1.0
+# timestepping
+dt: 0.001 # s
+timeTotal: 1.0 # s
+timeSnap: 0.1 # s
+# CollisionSolver
+colResTol: 0.00001 # 1e-5 format may be incompatible
+colMaxIte: 8000
+colNewtonRefine: false
